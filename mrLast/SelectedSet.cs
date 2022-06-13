@@ -70,8 +70,11 @@ public class SelectedSet : ObservableObject
             Ids.Add(modelObject.Id);
         }
 
-        DisplayName = modelObjects.Select(o => o.ObjectType).Distinct().Count() > 1
-            ? Language.GetItem("h1")
-            : ModPlus.Helpers.Localization.RengaObjectType(modelObjects.Last().ObjectType);
+        if (modelObjects.Any())
+        {
+            DisplayName = modelObjects.Select(o => o.ObjectType).Distinct().Count() > 1
+               ? Language.GetItem("h1")
+               : ModPlus.Helpers.Localization.RengaObjectType(modelObjects.Last().ObjectType);
+        }
     }
 }
