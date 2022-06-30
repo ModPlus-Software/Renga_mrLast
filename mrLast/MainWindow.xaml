@@ -13,7 +13,8 @@
                    d:DataContext="{d:DesignInstance local:Context, IsDesignTimeCreatable=False}"
                    ResizeMode="CanResizeWithGrip"
                    WindowStartupLocation="CenterScreen"
-                   mc:Ignorable="d">
+                   mc:Ignorable="d"
+                   CloseByEscape="False">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

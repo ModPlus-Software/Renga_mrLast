@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<Version>1.0.0.0</Version>
+		<Version>1.0.1.0</Version>
 		<RootNamespace>mrLast</RootNamespace>
 		<AssemblyName>$(RootNamespace)</AssemblyName>
 		<Configurations>Debug;Release</Configurations>
@@ -11,6 +11,8 @@
 		<Company>modplus.org</Company>
 		<Authors>modplus.org</Authors>
 		<Product>ModPlus</Product>
+		<AssemblyTitle>Plugin for ModPlus software for Renga</AssemblyTitle>
+		<Description>$(AssemblyTitle)</Description>
 		<Copyright>Copyright © ModPlus</Copyright>
 		<CodeAnalysisRuleSet>$(SolutionDir)\ModPlus.ruleset</CodeAnalysisRuleSet>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
